@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hansika Gupta — Portfolio</title>
+  <meta name="description" content="Hansika Gupta — final-year Physics undergraduate at IIT Kanpur working across applied AI, machine learning, quantitative finance and product." />
+  <meta property="og:title" content="Hansika Gupta — Portfolio" />
+  <meta property="og:description" content="Applied AI, machine learning, quant finance and product — IIT Kanpur." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#F4F1EA" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    // Apply saved theme before paint to avoid a flash
+    try { var t = localStorage.getItem('hg-theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="i-gh" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.69 5.39-5.26 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></symbol></svg>
+  <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+
+  <!-- ============ NAV ============ -->
+  <nav class="nav" id="nav">
+    <a href="#about" class="monogram" aria-label="Back to top">
+      <span>H</span><span class="mono-g">G</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about"><i>01</i>About</a></li>
+      <li><a href="#education"><i>02</i>Education</a></li>
+      <li><a href="#experience"><i>03</i>Experience</a></li>
+      <li><a href="#projects"><i>04</i>Projects</a></li>
+      <li><a href="#achievements"><i>05</i>Achievements</a></li>
+      <li><a href="#contact"><i>06</i>Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+      <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>
+      <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+    </button>
+  </nav>
+
+  <main>
+    <!-- ============ 01 ABOUT / HERO ============ -->
+    <section class="hero" id="about">
+      <canvas id="wave" aria-hidden="true"></canvas>
+      <div class="hero-inner wrap">
+        <p class="eyebrow reveal"><span class="dot"></span>Final-year undergraduate · Department of Physics · IIT Kanpur</p>
+        <h1 class="hero-name reveal">Hansika<br /><em>Gupta</em></h1>
+
+        <div class="hero-grid">
+          <div class="hero-copy reveal">
+            <p class="lede">
+              I studied how systems behave under uncertainty in physics. Now I build products and models that make decisions under it.
+            </p>
+            <p>
+              My work sits where <strong>applied AI</strong>, <strong>machine learning</strong>, <strong>quantitative finance</strong> and <strong>product thinking</strong> meet.
+              I've built a multi-agent underwriting system for a global insurer, deep-learning models that price options better than Black-Scholes,
+              and a website funnel that converted 18% better. I care about the full arc: getting the analysis right, making the system dependable,
+              and showing that it worked with measurable results.
+            </p>
+            <div class="hero-cta">
+              <a class="btn btn-solid" href="#experience">See my work <span aria-hidden="true">↓</span></a>
+              <a class="btn btn-ghost" href="#contact">Get in touch</a>
+            </div>
+          </div>
+
+          <aside class="hero-card reveal" aria-label="At a glance">
+            <p class="card-label">At a glance</p>
+            <dl class="glance">
+              <div><dt><span class="count" data-to="3">3</span></dt><dd>internships across AI, ML &amp; product</dd></div>
+              <div><dt><span class="count" data-to="5">5</span></dt><dd>shipped technical projects</dd></div>
+              <div><dt><span class="count" data-to="2">2</span></dt><dd>national case-competition finals</dd></div>
+              <div><dt><span class="count" data-to="220">220</span>+</dt><dd>students mentored in finance</dd></div>
+            </dl>
+            <div class="fields">
+              <span>Agentic AI</span><span>Deep Learning</span><span>RAG</span><span>Quant Modelling</span><span>Product &amp; Growth</span><span>Full-stack</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+      <a href="#education" class="scroll-cue" aria-label="Scroll to education"><span></span></a>
+    </section>
+
+    <!-- ============ 02 EDUCATION ============ -->
+    <section class="section" id="education">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <span class="sec-num">02</span>
+          <h2>Education</h2>
+          <p class="sec-kicker">From school boards to IIT Kanpur, with a physics foundation and a strong pull toward computation.</p>
+        </header>
+
+        <div class="trajectory">
+          <svg class="traj-line" viewBox="0 0 1000 40" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0 30 C 250 30, 300 8, 500 8 S 800 2, 1000 2" />
+          </svg>
+
+          <article class="edu-card reveal">
+            <div class="edu-year">2020 — 2021</div>
+            <div class="gauge" data-value="95.2" data-max="100">
+              <svg viewBox="0 0 120 120"><circle class="g-track" cx="60" cy="60" r="52"/><circle class="g-fill" cx="60" cy="60" r="52"/></svg>
+              <div class="g-text"><b>95.2</b><small>%</small></div>
+            </div>
+            <h3>Class X</h3>
+            <p class="edu-board">CBSE</p>
+            <p class="edu-inst">Olympus High Sr. Sec. School</p>
+          </article>
+
+          <article class="edu-card reveal">
+            <div class="edu-year">2022 — 2023</div>
+            <div class="gauge" data-value="87" data-max="100">
+              <svg viewBox="0 0 120 120"><circle class="g-track" cx="60" cy="60" r="52"/><circle class="g-fill" cx="60" cy="60" r="52"/></svg>
+              <div class="g-text"><b>87</b><small>%</small></div>
+            </div>
+            <h3>Class XII</h3>
+            <p class="edu-board">MPBSE</p>
+            <p class="edu-inst">Shyam Kids Convent Sr. Sec. School</p>
+          </article>
+
+          <article class="edu-card edu-main reveal">
+            <div class="edu-year"><span class="live"></span>2023 — Present</div>
+            <div class="gauge" data-value="7.0" data-max="10">
+              <svg viewBox="0 0 120 120"><circle class="g-track" cx="60" cy="60" r="52"/><circle class="g-fill" cx="60" cy="60" r="52"/></svg>
+              <div class="g-text"><b>7.0</b><small>/10</small></div>
+            </div>
+            <h3>Bachelor of Science, Physics</h3>
+            <p class="edu-board">CGPA</p>
+            <p class="edu-inst">Indian Institute of Technology Kanpur</p>
+          </article>
+        </div>
+
+        <div class="courses reveal">
+          <div class="courses-head">
+            <h3>Relevant coursework</h3>
+            <p>A periodic table of what I've studied. <span class="legend"><i class="online-dot"></i> Online course</span></p>
+          </div>
+          <div class="ptable">
+            <div class="el" data-cat="ai"><span class="z">01</span><span class="sym">Ai</span><span class="nm">AI, ML, DL &amp; their applications</span></div>
+            <div class="el online" data-cat="cs"><span class="z">02</span><span class="sym">Ds</span><span class="nm">Data Structures &amp; Algorithms</span></div>
+            <div class="el online" data-cat="math"><span class="z">03</span><span class="sym">Ps</span><span class="nm">Probability &amp; Statistics</span></div>
+            <div class="el" data-cat="math"><span class="z">04</span><span class="sym">La</span><span class="nm">Linear Algebra</span></div>
+            <div class="el" data-cat="cs"><span class="z">05</span><span class="sym">Fc</span><span class="nm">Fundamentals of Computing I &amp; II</span></div>
+            <div class="el" data-cat="phy"><span class="z">06</span><span class="sym">Cp</span><span class="nm">Computational Physics</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 03 EXPERIENCE ============ -->
+    <section class="section section-alt" id="experience">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <span class="sec-num">03</span>
+          <h2>Experience</h2>
+          <p class="sec-kicker">Three internships, each set out as objective, approach and measured result.</p>
+        </header>
+
+        <!-- Sun Life -->
+        <article class="job reveal">
+          <div class="job-side">
+            <p class="job-dates">May ’26 — Jul ’26</p>
+            <h3 class="job-co">Sun Life Financial</h3>
+            <p class="job-role">Agentic AI Intern</p>
+            <p class="job-proj">Insurance Underwriting Automation</p>
+            <ul class="tags">
+              <li>LangGraph</li><li>Amazon EKS</li><li>Bedrock</li><li>Claude</li><li>Llama</li><li>RAG</li>
+            </ul>
+          </div>
+          <div class="job-body">
+            <div class="oar">
+              <span class="oar-k">Objective</span>
+              <p>Build an Agentic AI proof of concept that automates life-insurance underwriting intake, risk evaluation and routing, cutting manual review effort while keeping deterministic <b>safety guardrails</b>.</p>
+            </div>
+            <div class="oar">
+              <span class="oar-k">Approach</span>
+              <ul>
+                <li>Engineered a <b>6-agent LangGraph workflow</b> orchestrated on Amazon EKS with Bedrock Claude models.</li>
+                <li><b>Fine-tuned Llama</b> on Amazon Bedrock, grounded with document-scoped <b>RAG</b> to minimise hallucinations.</li>
+                <li>Built <b>confidence-calibrated case routing</b> (60%–85% thresholds) with deterministic pre- and post-AI rule checks.</li>
+                <li>Validated the system across unit, red-team, fairness, calibration and held-out backtesting suites.</li>
+              </ul>
+            </div>
+            <div class="oar">
+              <span class="oar-k">Result</span>
+              <div class="metrics">
+                <div class="metric"><b><span class="count" data-to="68">68</span>%</b><span>straight-through processing</span></div>
+                <div class="metric"><b><span class="count" data-to="92">92</span>%</b><span>underwriter agreement</span></div>
+                <div class="metric"><b>−<span class="count" data-to="40">40</span>%</b><span>referrals in backtesting</span></div>
+                <div class="metric"><b>&lt;0.5%</b><span>false-accept rate, within the safety threshold</span></div>
+              </div>
+              <p class="note">The false-accept rate stayed inside the safety limit, which supported the case that the prototype was ready for production.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Spacenos -->
+        <article class="job reveal">
+          <div class="job-side">
+            <p class="job-dates">Dec ’25 — Feb ’26</p>
+            <h3 class="job-co">Spacenos</h3>
+            <p class="job-role">Product Manager Intern</p>
+            <p class="job-proj">Website Product &amp; Growth</p>
+            <ul class="tags">
+              <li>GA4</li><li>Hotjar</li><li>Figma</li><li>Search Console</li><li>A/B Testing</li><li>SEO</li>
+            </ul>
+          </div>
+          <div class="job-body">
+            <div class="oar">
+              <span class="oar-k">Objective</span>
+              <p>Own the website product experience and growth: UX, SEO and end-to-end <b>funnel optimisation</b>.</p>
+            </div>
+            <div class="oar">
+              <span class="oar-k">Approach</span>
+              <ul>
+                <li>Ran a <b>data-driven product audit</b> to surface UX friction and funnel drop-offs using GA4 and Hotjar heatmaps.</li>
+                <li>Redesigned the site's <b>information architecture</b> and rebuilt user flows in Figma to reduce navigation friction.</li>
+                <li>Shipped on-page <b>SEO fixes</b>, tracking keyword ranking and traffic impact in Google Search Console.</li>
+                <li>Ran iterative <b>A/B tests</b> on landing pages to choose CTA placement and layout, backed by GA4 funnel data.</li>
+              </ul>
+            </div>
+            <div class="oar">
+              <span class="oar-k">Result</span>
+              <div class="metrics">
+                <div class="metric"><b>+<span class="count" data-to="18">18</span>%</b><span>conversion rate</span></div>
+                <div class="metric"><b>−<span class="count" data-to="12">12</span>%</b><span>user drop-off</span></div>
+                <div class="metric"><b>+<span class="count" data-to="25">25</span>%</b><span>organic traffic</span></div>
+              </div>
+              <p class="note">Gains came from the landing-page UX and CTA redesign, targeted SEO, page-level optimisation and content restructuring.</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Quantinsider -->
+        <article class="job reveal">
+          <div class="job-side">
+            <p class="job-dates">Sep ’24 — Jan ’25</p>
+            <h3 class="job-co">Quantinsider</h3>
+            <p class="job-role">Machine Learning Intern</p>
+            <p class="job-proj">Options Pricing</p>
+            <ul class="tags">
+              <li>PyTorch</li><li>MLP</li><li>LSTM</li><li>Multi-task learning</li><li>Pandas</li>
+            </ul>
+          </div>
+          <div class="job-body">
+            <div class="oar">
+              <span class="oar-k">Objective</span>
+              <p>Build deep-learning models for option pricing that beat <b>Black-Scholes</b> on accuracy and calibration.</p>
+            </div>
+            <div class="oar">
+              <span class="oar-k">Approach</span>
+              <ul>
+                <li>Trained <b>MLP and LSTM</b> models on <b>12M+ option contracts</b> with engineered features (moneyness, TTM, IV skew, RV).</li>
+                <li>Applied <b>multi-task learning</b> to predict option price and bid-ask spread, using Leaky ReLU and batch norm.</li>
+                <li>Used <b>distribution-aware training</b> to keep the model robust across shifting volatility regimes.</li>
+              </ul>
+            </div>
+            <div class="oar">
+              <span class="oar-k">Result</span>
+              <div class="metrics">
+                <div class="metric"><b>−<span class="count" data-to="87">87</span>%</b><span>RMSE vs Black-Scholes</span></div>
+                <div class="metric metric-wide">
+                  <b>23.1 <i class="arrow">→</i> 3.0</b><span>put-option RMSE</span>
+                </div>
+                <div class="metric metric-wide">
+                  <b>24% <i class="arrow">→</i> 55%</b><span>PE20 accuracy</span>
+                </div>
+              </div>
+              <p class="note">The LSTM generalised best; the MLP had the lowest error and bias.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ 04 PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <span class="sec-num">04</span>
+          <h2>Projects</h2>
+          <p class="sec-kicker">Systems I designed, built and measured, from trading engines to agentic assistants.</p>
+        </header>
+
+        <div class="filters reveal" role="tablist" aria-label="Filter projects">
+          <button class="chip is-on" data-filter="all" role="tab" aria-selected="true">All <sup>5</sup></button>
+          <button class="chip" data-filter="ai" role="tab" aria-selected="false">AI / ML <sup>3</sup></button>
+          <button class="chip" data-filter="systems" role="tab" aria-selected="false">Systems &amp; Web <sup>2</sup></button>
+          <button class="chip" data-filter="analytics" role="tab" aria-selected="false">Analytics <sup>1</sup></button>
+        </div>
+
+        <div class="projects">
+          <!-- HealthPulseAI -->
+          <article class="proj reveal" data-cat="ai analytics">
+            <div class="proj-top">
+              <span class="proj-idx">P.01</span>
+              <span class="proj-date">Jan ’26 — Apr ’26</span>
+            </div>
+            <h3>HealthPulseAI</h3>
+            <p class="proj-sub">Budget Analytics Platform · BSE662 · Prof. Arjun Ramakrishnan · IIT Kanpur</p>
+            <div class="proj-stat"><b>ρ = 0.89</b><span>rank stability under ±10% weight shift</span></div>
+            <ul class="proj-points">
+              <li>Developed an AI-powered analytics model for NHM to query, monitor and prioritise district health data for budget decisions.</li>
+              <li>Built a Streamlit dashboard and SQL pipeline over <b>25,000+</b> district-month records from <b>28 states</b> for cleaning and feature engineering.</li>
+              <li>Designed a composite priority index flagging <b>70–105 of 700</b> districts as high-priority, worth <b>₹500–1,500 crore</b> in reallocation.</li>
+              <li>Validated the rankings with sensitivity analysis and a <b>65% overlap</b> with NITI Aayog's target districts.</li>
+            </ul>
+            <div class="proj-foot">
+              <ul class="tags"><li>Python</li><li>SQL</li><li>Streamlit</li><li>Pandas</li></ul>
+              <a class="gh" href="https://github.com/hansika2809/HealthPulseAI" target="_blank" rel="noopener" aria-label="HealthPulseAI on GitHub">
+                <svg width="18" height="18" aria-hidden="true"><use href="#i-gh"/></svg>
+                <span>Code</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- TeachMe.AI -->
+          <article class="proj reveal" data-cat="ai">
+            <div class="proj-top">
+              <span class="proj-idx">P.02</span>
+              <span class="proj-date">Feb ’26 — Mar ’26</span>
+            </div>
+            <h3>TeachMe.AI</h3>
+            <p class="proj-sub">Multi-Agent Document Assistant · Self Project</p>
+            <div class="proj-stat"><b>~$0.0002</b><span>per query after model right-sizing</span></div>
+            <ul class="proj-points">
+              <li>Built an end-to-end agentic document assistant with LangChain and Gemini 2.5 Flash, orchestrating <b>6 specialised agents</b>.</li>
+              <li>Designed an intent-based routing layer that sends <b>95%</b> of user requests to the correct agent.</li>
+              <li>Fully fine-tuned <b>T5-base</b> for summarisation and deployed it via a Modal AI REST API (~39 ROUGE-L, 500 ms–1 s latency).</li>
+              <li>Cut deployment cost by choosing a smaller specialised model over a general-purpose LLM.</li>
+            </ul>
+            <div class="proj-foot">
+              <ul class="tags"><li>LangChain</li><li>Gemini</li><li>T5</li><li>Modal</li></ul>
+              <a class="gh" href="https://github.com/hansika2809/TeachMe.AI" target="_blank" rel="noopener" aria-label="TeachMe.AI on GitHub">
+                <svg width="18" height="18" aria-hidden="true"><use href="#i-gh"/></svg>
+                <span>Code</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Fault diagnosis -->
+          <article class="proj reveal" data-cat="ai">
+            <div class="proj-top">
+              <span class="proj-idx">P.03</span>
+              <span class="proj-date">Jun ’25 — Jul ’25</span>
+            </div>
+            <h3>ML-Driven Fault Diagnosis for Air Compressors</h3>
+            <p class="proj-sub">EE656 · Prof. Nishchal Verma · IIT Kanpur</p>
+            <div class="proj-stat"><b>99.5%</b><span>classification accuracy, sub-10 s inference</span></div>
+            <ul class="proj-points">
+              <li>Built an ML fault-diagnosis framework for reciprocating air compressors from 5-second acoustic-sensor recordings.</li>
+              <li>Built a preprocessing pipeline (clipping, smoothing, normalisation) over <b>1,800+</b> recordings for feature extraction.</li>
+              <li>Extracted <b>629</b> time-, frequency- and hybrid-domain features; used mRMR/NMIFS to select <b>25</b> (a 96% reduction).</li>
+              <li>Trained multiclass SVM classifiers (OAA, OAO, DAG).</li>
+            </ul>
+            <div class="proj-foot">
+              <ul class="tags"><li>Scikit-learn</li><li>SVM</li><li>Signal processing</li></ul>
+              <a class="gh" href="https://github.com/hansika2809/EE656-Course-project" target="_blank" rel="noopener" aria-label="Fault diagnosis project on GitHub">
+                <svg width="18" height="18" aria-hidden="true"><use href="#i-gh"/></svg>
+                <span>Code</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Limit Order Book -->
+          <article class="proj reveal" data-cat="systems">
+            <div class="proj-top">
+              <span class="proj-idx">P.04</span>
+              <span class="proj-date">Dec ’24 — May ’25</span>
+            </div>
+            <h3>Interactive Limit Order Book</h3>
+            <p class="proj-sub">Prof. Anirban Banerjee · IIM Ahmedabad</p>
+            <div class="proj-stat"><b>10K+ / min</b><span>orders sustained at sub-2 s latency</span></div>
+            <ul class="proj-points">
+              <li>Engineered a Django trading simulator supporting <b>6 order types</b>, replicating real exchange order flow and settlement logic.</li>
+              <li>Developed a <b>price-time-priority matching engine</b> with live WebSocket order-book updates and fully atomic transactions.</li>
+              <li>Built an event-driven order pipeline on <b>Redis</b>, verified with Locust load testing.</li>
+              <li>Designed a PostgreSQL schema tracking <b>600+ users</b> across 10+ market scenarios, with CSV exports for post-trade analysis.</li>
+            </ul>
+            <div class="proj-foot">
+              <ul class="tags"><li>Django</li><li>Redis</li><li>PostgreSQL</li><li>WebSockets</li></ul>
+              <a class="gh" href="https://github.com/hansika2809/STOCK_LIMIT_ORDER_BOOK" target="_blank" rel="noopener" aria-label="Limit Order Book on GitHub">
+                <svg width="18" height="18" aria-hidden="true"><use href="#i-gh"/></svg>
+                <span>Code</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Course Helper -->
+          <article class="proj reveal" data-cat="systems">
+            <div class="proj-top">
+              <span class="proj-idx">P.05</span>
+              <span class="proj-date">Dec ’24 — Jan ’25</span>
+            </div>
+            <h3>Course Helper Web App</h3>
+            <p class="proj-sub">Google Developers Group · IIT Kanpur</p>
+            <div class="proj-stat"><b>1,000+</b><span>IIT Kanpur students using it</span></div>
+            <ul class="proj-points">
+              <li>Built a full-stack course-management platform with React/Next.js and Node.js/Express.</li>
+              <li>Designed RESTful APIs with Prisma ORM on PostgreSQL, with queries optimised to return course data in <b>under 100 ms</b>.</li>
+              <li>Developed reusable OOP error utilities (ApiResponse, ApiError, AsyncHandler); the app scores <b>90+</b> on Lighthouse.</li>
+            </ul>
+            <div class="proj-foot">
+              <ul class="tags"><li>Next.js</li><li>Express</li><li>Prisma</li><li>PostgreSQL</li></ul>
+              <a class="gh" href="https://github.com/hansika2809/Course_Helper_GDG" target="_blank" rel="noopener" aria-label="Course Helper on GitHub">
+                <svg width="18" height="18" aria-hidden="true"><use href="#i-gh"/></svg>
+                <span>Code</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 05 ACHIEVEMENTS ============ -->
+    <section class="section section-alt" id="achievements">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <span class="sec-num">05</span>
+          <h2>Achievements</h2>
+          <p class="sec-kicker">Case competitions where strategy met numbers, and leadership outside the classroom.</p>
+        </header>
+
+        <div class="cases">
+          <!-- Strategy Storm -->
+          <article class="case reveal">
+            <div class="case-head">
+              <div>
+                <p class="case-meta">Strategy Storm · IIT Guwahati · Jan ’25 — Feb ’25</p>
+                <h3>Blinkit: customer churn analysis &amp; retention strategy</h3>
+              </div>
+              <span class="badge">Finalist</span>
+            </div>
+            <div class="rank">
+              <div class="rank-dots" data-total="4000" data-hit="41" aria-hidden="true"></div>
+              <p><b>Top 41</b> of 4,000+ teams, roughly the top 1% <span class="dot-key">· each dot ≈ 10 teams</span></p>
+            </div>
+            <p class="case-obj">Find the key drivers of churn and design targeted retention plays for a <b>47.3%</b> churn base.</p>
+            <ul class="case-points">
+              <li>Identified <b>delivery delay</b> as the top churn driver (r = 0.57). RICE-scored it as the flagship fix and built a Scheduled Delivery feature.</li>
+              <li>Found a <b>54.5% churn spike</b> among female users and proposed personalised, brand-led recommendations.</li>
+              <li>Traced <b>42% higher support-call volume</b> among churned users (6.4 vs 4.5) and proposed an AI chatbot.</li>
+              <li>Pinpointed delivery cost and speed as the bottleneck and designed a <b>Neighbourhood Partners &amp; micro-hub</b> model.</li>
+            </ul>
+          </article>
+
+          <!-- NIBC -->
+          <article class="case reveal">
+            <div class="case-head">
+              <div>
+                <p class="case-meta">National Investment Banking Competition · FAC · Dec ’24 — Jan ’25</p>
+                <h3>Bumble Inc.: strategic positioning &amp; acquisition analysis</h3>
+              </div>
+              <span class="badge">Global finalist</span>
+            </div>
+            <div class="rank rank-alt">
+              <div class="podium" aria-hidden="true"><span></span><span class="hit"></span><span class="hit"></span><span></span><span></span></div>
+              <p><b>One of the top 2 Indian teams</b> in the global round, among 400 teams worldwide</p>
+            </div>
+            <p class="case-obj">Run an end-to-end market analysis of Bumble to guide its strategic positioning and an acquisition recommendation for Meta.</p>
+            <ul class="case-points">
+              <li>Built a valuation model (<b>DCF, comparables, precedent transactions</b>) across 15+ industry peers to benchmark fair value.</li>
+              <li>Analysed 5 business models through SWOT, competitive landscape and geographic mapping to find growth synergies.</li>
+              <li>Recommended a Meta acquisition at <b>$9.60/share</b>, backed by a 2.86× EBITDA margin gain and a $200M revenue opportunity.</li>
+              <li>Modelled a growth roadmap: 15% revenue growth, 10% marketing-efficiency gains, 10% less reliance on platform ads.</li>
+            </ul>
+          </article>
+        </div>
+
+        <h3 class="sub-head reveal">Leadership &amp; beyond</h3>
+        <div class="honours">
+          <div class="honour reveal">
+            <span class="h-k">Leadership</span>
+            <p class="h-big"><span class="count" data-to="220">220</span>+</p>
+            <p><b>Secretary, Finance Club, IIT Kanpur.</b> Mentored 220+ students in finance and trading and ran financial-literacy initiatives for 600+ freshmen.</p>
+          </div>
+          <div class="honour reveal">
+            <span class="h-k">Management</span>
+            <p class="h-big"><span class="count" data-to="100">100</span>+</p>
+            <p><b>Led a volunteer team for NCW ’25</b>, an event with 4K+ attendees across 10+ events.</p>
+          </div>
+          <div class="honour reveal">
+            <span class="h-k">Service</span>
+            <p class="h-big">‘A’</p>
+            <p><b>NCC ‘A’ Certificate</b>, awarded by the Ministry of Defence, for discipline and national service.</p>
+          </div>
+          <div class="honour reveal">
+            <span class="h-k">Speaking</span>
+            <p class="h-big">3<sup>rd</sup></p>
+            <p><b>District Debate Competition</b>, organised by the Brij Mohan Foundation, Madhya Pradesh.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 06 CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <span class="sec-num">06</span>
+          <h2>Contact</h2>
+        </header>
+        <p class="contact-big reveal">Let's build something<br /><em>worth measuring.</em></p>
+
+        <ul class="links reveal">
+          <li>
+            <span class="l-k">Work</span>
+            <a href="mailto:hansikag23@iitk.ac.in" class="l-v">hansikag23@iitk.ac.in</a>
+            <button class="copy" data-copy="hansikag23@iitk.ac.in" aria-label="Copy work email">Copy</button>
+          </li>
+          <li>
+            <span class="l-k">Personal</span>
+            <a href="mailto:20050928han@gmail.com" class="l-v">20050928han@gmail.com</a>
+            <button class="copy" data-copy="20050928han@gmail.com" aria-label="Copy personal email">Copy</button>
+          </li>
+          <li>
+            <span class="l-k">LinkedIn</span>
+            <a href="https://www.linkedin.com/in/hansika-gupta-893343283/" class="l-v" target="_blank" rel="noopener">Hansika Gupta</a>
+            <span class="l-arrow" aria-hidden="true">↗</span>
+          </li>
+          <li>
+            <span class="l-k">GitHub</span>
+            <a href="https://github.com/hansika2809" class="l-v" target="_blank" rel="noopener">Hansika2809</a>
+            <span class="l-arrow" aria-hidden="true">↗</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span>© <span id="year">2026</span> Hansika Gupta</span>
+      <span class="footer-mid">IIT Kanpur · Physics</span>
+      <a href="#about">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="main.js"></script>
+</body>
+</html>
